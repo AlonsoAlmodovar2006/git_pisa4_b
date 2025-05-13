@@ -1,0 +1,243 @@
+/* css_pisa4_LETRAGRUPO_apellido1/estilos_apellido1.css */
+
+/*
+  Paleta Aplicada: https://coolors.co/ffa69e-faf3dd-b8f2e6-aed9e0-5e6472
+  --melon: #FFA69E;
+  --cosmic-latte: #FAF3DD;
+  --aero-blue: #B8F2E6;
+  --pale-cerulean: #AED9E0;
+  --slate-gray: #5E6472;
+*/
+
+:root {
+    /* Tu nueva paleta de colores */
+    --color-fondo: #FAF3DD;                 /* Cosmic Latte: para el fondo general de la página */
+    --color-texto-principal: #5E6472;       /* Slate Gray: para el texto principal, buen contraste */
+    --color-primario: #AED9E0;              /* Pale Cerulean: para elementos principales, cabecera */
+    --color-secundario: #B8F2E6;            /* Aero Blue: para acentos sutiles, fondos secundarios */
+    --color-acento: #FFA69E;                /* Melon: para llamadas a la acción, enlaces, detalles llamativos */
+
+    /* Colores derivados o específicos */
+    --color-texto-cabecera: var(--color-texto-principal); /* Slate Gray sobre Pale Cerulean debería funcionar bien */
+    --color-texto-cabecera-alternativo: #FFFFFF; /* Blanco si se prefiere más contraste aún */
+    --color-enlace: var(--color-acento);
+    --color-enlace-hover: var(--color-texto-principal);
+    --color-fondo-footer: var(--color-texto-principal); /* Slate Gray para un footer oscuro */
+    --color-texto-footer: var(--color-fondo);           /* Cosmic Latte para texto en footer */
+    --color-borde-main-title: var(--color-acento);
+
+    /* Tipografía - Puedes mantener o cambiar */
+    --fuente-principal: 'Nunito Sans', sans-serif; /* Una sans-serif moderna y legible */
+    --fuente-titulos: 'Montserrat', sans-serif;   /* Una sans-serif popular para títulos */
+
+    /* Sobrescribir algunas variables de Bootstrap (opcional, pero puede ser útil) */
+    /* Si haces esto, muchos componentes de Bootstrap tomarán estos colores por defecto */
+    /* --bs-primary: var(--color-primario); */
+    /* --bs-secondary: var(--color-secundario); */
+    /* --bs-light: var(--color-fondo); */
+    /* --bs-dark: var(--color-texto-principal); */
+}
+
+/* Importar fuentes de Google (ejemplo) */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Nunito+Sans:wght@400;700&display=swap');
+
+body {
+    font-family: var(--fuente-principal);
+    background-color: var(--color-fondo);
+    color: var(--color-texto-principal);
+    line-height: 1.7;
+}
+
+/* ----- Cabecera y Navegación (Usando más clases de Bootstrap) ----- */
+/* La clase .bg-primary de la plantilla usará el color primario de Bootstrap.
+   Si queremos nuestro color personalizado sin sobrescribir --bs-primary,
+   necesitamos una clase propia o estilo directo.
+   En la plantilla HTML, la cabecera tiene `class="bg-primary text-white shadow-sm"`
+   Podemos cambiar `bg-primary` por `mi-header-bg` y definirla aquí, o modificar `.bg-primary`
+   Para este ejemplo, modificaré el `.bg-primary` de la plantilla,
+   pero ten en cuenta que afectará a otros usos de `.bg-primary` de Bootstrap si no lo limitas bien.
+*/
+header > .navbar { /* Apuntando específicamente a la navbar dentro del header */
+    background-color: var(--color-primario) !important; /* Pale Cerulean */
+}
+
+.navbar-brand,
+.navbar .nav-link {
+    color: var(--color-texto-cabecera) !important; /* Slate Gray */
+    font-weight: 700; /* Fuente más gruesa para destacar */
+    transition: color 0.2s ease-in-out, transform 0.2s ease-in-out;
+}
+.navbar .nav-link:hover,
+.navbar .nav-link.active {
+    color: var(--color-acento) !important; /* Melon para hover/activo */
+    transform: translateY(-2px); /* Pequeño efecto al pasar el ratón */
+}
+.navbar-brand {
+    font-family: var(--fuente-titulos);
+    font-size: 1.5rem; /* Más grande */
+}
+.navbar-toggler {
+    border-color: rgba(94, 100, 114, 0.4); /* Borde con Slate Gray semi-transparente */
+}
+.navbar-toggler-icon { /* Para que el icono del menú hamburguesa sea visible */
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%2894, 100, 114, 0.85%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+/* ----- Títulos ----- */
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--fuente-titulos);
+    color: var(--color-texto-principal); /* Slate Gray para títulos principales */
+    font-weight: 700;
+}
+h2.main-title { /* Clase ya existente en el HTML */
+    color: var(--color-texto-principal); /* Slate Gray */
+    /* El borde ya está en el HTML con `border-bottom pb-2 mb-4` */
+    /* Podemos añadir un color al borde si es necesario */
+    border-color: var(--color-borde-main-title) !important; /* Melon */
+    border-width: 3px !important; /* Hacerlo más grueso */
+    font-size: 2.4rem; /* Más grande */
+}
+
+/* ----- Enlaces ----- */
+a {
+    color: var(--color-enlace); /* Melon */
+    text-decoration: none;
+    font-weight: 700; /* Enlaces más destacados */
+    transition: color 0.2s ease-in-out;
+}
+a:hover {
+    color: var(--color-enlace-hover); /* Slate Gray */
+    /* text-decoration: underline; Bootstrap puede o no añadirlo */
+}
+
+/* ----- Pie de página (Usando más clases de Bootstrap) ----- */
+/* En HTML: `<footer class="bg-dark text-white text-center p-3 mt-auto">`
+   Cambiamos `bg-dark` y `text-white` por nuestras clases o estilos
+*/
+footer.mt-auto { /* Apuntando al footer */
+    background-color: var(--color-fondo-footer) !important; /* Slate Gray */
+    color: var(--color-texto-footer) !important; /* Cosmic Latte */
+}
+footer a {
+    color: var(--color-primario) !important; /* Pale Cerulean para enlaces en footer */
+}
+footer a:hover {
+    color: var(--color-secundario) !important; /* Aero Blue para hover */
+}
+
+/* ----- Elementos Adicionales (Usando clases de Bootstrap donde sea posible) ----- */
+/* Para las tarjetas, Bootstrap ya tiene .card, .card-header, .card-body, etc. */
+/* Podemos personalizar sus variables o añadir estilos sutiles */
+.card {
+    border-color: var(--color-secundario); /* Aero Blue */
+    /* `shadow-sm` o `shadow` de Bootstrap se puede usar en el HTML */
+}
+.card-header {
+    background-color: var(--color-secundario) !important; /* Aero Blue */
+    color: var(--color-texto-principal) !important; /* Slate Gray */
+    font-family: var(--fuente-titulos);
+    font-weight: 700;
+}
+
+/* ----- Botones (Bootstrap los estiliza bien, pero podemos darles nuestro toque) ----- */
+/* Si usas <button class="btn btn-primary">, tomará el --bs-primary.
+   Si quieres forzar tus colores sin cambiar --bs-primary, crea clases nuevas.
+*/
+.btn-custom-pisa {
+    background-color: var(--color-acento); /* Melon */
+    color: #fff; /* Blanco para contraste fuerte con Melon */
+    border: none;
+    font-family: var(--fuente-titulos);
+    font-weight: 700;
+    padding: 0.6rem 1.5rem; /* Ajusta el padding */
+    transition: background-color 0.2s ease-in-out, transform 0.2s ease-in-out;
+}
+.btn-custom-pisa:hover {
+    background-color: darken(var(--color-acento), 10%); /* Un Melon más oscuro */
+    color: #fff;
+    transform: translateY(-2px);
+}
+
+.btn-secondary-pisa {
+    background-color: var(--color-primario); /* Pale Cerulean */
+    color: var(--color-texto-principal); /* Slate Gray */
+    border: 1px solid var(--color-primario);
+    font-family: var(--fuente-titulos);
+    font-weight: 700;
+    padding: 0.6rem 1.5rem;
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, transform 0.2s ease-in-out;
+}
+.btn-secondary-pisa:hover {
+    background-color: var(--color-secundario); /* Aero Blue */
+    color: var(--color-texto-principal);
+    border-color: var(--color-secundario);
+    transform: translateY(-2px);
+}
+
+/* Estilos para listas (índice, bibliografía) */
+.styled-list {
+    list-style: none;
+    padding-left: 0;
+}
+.styled-list li {
+    padding: 0.75rem 0; /* Más espaciado */
+    border-bottom: 1px dashed var(--color-secundario); /* Aero Blue */
+}
+.styled-list li:last-child {
+    border-bottom: none;
+}
+.styled-list li::before {
+    /* Puedes usar un icono de Bootstrap Icons si están enlazados en el HTML */
+    /* content: "\F285"; Bootstrap Icon chevron right */
+    /* font-family: "bootstrap-icons"; */
+    content: "✿"; /* Flor simple como ejemplo, va con la paleta */
+    margin-right: 0.75rem;
+    color: var(--color-acento); /* Melon */
+    font-size: 1.2em; /* Hacer el marcador un poco más grande */
+}
+
+/* ----- Carrusel de Bootstrap ----- */
+.carousel-caption {
+    background-color: rgba(94, 100, 114, 0.7); /* Fondo Slate Gray semi-transparente para caption */
+    border-radius: .25rem; /* Bordes redondeados como las tarjetas */
+    color: var(--color-fondo); /* Texto Cosmic Latte */
+}
+.carousel-caption h5, .carousel-caption p {
+    color: var(--color-fondo) !important; /* Asegurar color del texto */
+    font-family: var(--fuente-titulos);
+}
+.carousel-indicators [data-bs-target] {
+    background-color: var(--color-primario); /* Indicadores Pale Cerulean */
+}
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: var(--color-texto-principal); /* Iconos de control con fondo Slate Gray */
+    border-radius: 50%; /* Hacerlos redondos */
+    padding: 0.5rem; /* Un poco de padding interno */
+}
+/* Eliminar el fondo SVG por defecto si se aplica el background-color */
+.carousel-control-prev-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23FAF3DD'%3e%3cpath d='M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z'/%3e%3c/svg%3e");
+}
+.carousel-control-next-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23FAF3DD'%3e%3cpath d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+}
+
+
+/* Mejoras generales con clases de Bootstrap donde sea posible */
+/* Ejemplo: Usar `rounded` para bordes redondeados, `shadow-sm` para sombras sutiles */
+/* Esto se aplicaría directamente en el HTML. */
+/* Ej: <div class="card shadow-sm rounded"> */
+
+/* Ajustes responsivos */
+@media (max-width: 768px) {
+    h2.main-title {
+        font-size: 2rem;
+    }
+    .navbar-brand {
+        font-size: 1.3rem;
+    }
+    body {
+        font-size: 0.95rem;
+    }
+}
