@@ -29,7 +29,7 @@ header h1 {
 }
 
 .navbar-nav .nav-link {
-    color: #000000 !important; /* Aseguramos el texto blanco en los enlaces */
+    color: #ffffff !important; /* Aseguramos el texto blanco en los enlaces */
     font-weight: bold;
 }
 
