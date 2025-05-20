@@ -221,3 +221,17 @@ a:hover {
 body {
     margin-bottom: 70px;
 }
+
+/* En tu archivo estilos_zavaleta.css podrías añadir algo así: */
+.stretched-link-button-fix {
+    position: static; /* O ajusta según sea necesario para que no rompa el layout del botón */
+    /* Puedes añadir más estilos para asegurar que se vea bien y sea funcional */
+}
+.accordion-button:not(.collapsed) a.stretched-link-button-fix,
+.accordion-button a.stretched-link-button-fix {
+    color: inherit !important; /* Hereda el color del botón */
+    text-decoration: none !important; /* Sin subrayado */
+}
+.accordion-button:focus {
+    box-shadow: none; /* Opcional: quitar el box-shadow del botón al enfocar si interfiere con el enlace */
+}
