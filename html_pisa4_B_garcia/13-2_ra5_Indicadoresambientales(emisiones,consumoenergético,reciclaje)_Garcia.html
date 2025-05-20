@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>13.2 Indicadores Ambientales - Pisa 4 - B - García</title>
+
+    <!-- Google Fonts, Bootstrap CSS, Bootstrap Icons, Tus estilos (idénticos a la plantilla) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Nunito+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="./css_pisa4_B_garcia/estilos_garcia.css">
+</head>
+<body class="d-flex flex-column min-vh-100">
+    <!-- Cabecera (idéntica a la plantilla) -->
+    <header class="shadow-sm">
+        <nav class="navbar navbar-expand-lg navbar-light bg-primary">
+            <div class="container">
+                <a class="navbar-brand fw-bold" href="../index.html"><i class="bi bi-house-door-fill"></i> PISA 4 - Grupo B</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="https://github.com/OrwinZavaleta/git_pisa4_b">Repositorio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./index_pisa4_B_garcia.html">Índice</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./bibliografia_pisa4_B_garcia.html">Bibliografía García</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Contenido Principal -->
+    <main class="container mt-4 mb-5 flex-grow-1">
+        <div class="row">
+            <div class="col-12">
+                <h2 class="display-5 border-bottom border-danger border-2 pb-2 mb-4">
+                    13.2. Indicadores Ambientales (Emisiones, Consumo Energético, Reciclaje)
+                </h2>
+                <p class="lead">
+                    Los indicadores ambientales son métricas diseñadas para medir el impacto de las actividades de una organización en el medio ambiente. Son cruciales para gestionar la huella ecológica y demostrar compromiso con la protección ambiental, especialmente en el sector TIC.
+                </p>
+
+                <h3 class="mt-5 mb-3 text-primary"><i class="bi bi-list-check me-2"></i>Principales Categorías de Indicadores Ambientales</h3>
+                <div class="accordion" id="accordionIndicadoresAmbientales">
+
+                    <div class="accordion-item">
+                        <h4 class="accordion-header" id="headingGEI">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseGEI" aria-expanded="false" aria-controls="collapseGEI">
+                                <i class="bi bi-cloud-haze2-fill me-2"></i>Emisiones de Gases de Efecto Invernadero (GEI)
+                            </button>
+                        </h4>
+                        <div id="collapseGEI" class="accordion-collapse collapse" aria-labelledby="headingGEI" data-bs-parent="#accordionIndicadoresAmbientales">
+                            <div class="accordion-body">
+                                <p><strong>Descripción:</strong> Miden gases que contribuyen al calentamiento global (tCO2e).</p>
+                                <p><strong>Indicadores Clave:</strong></p>
+                                <ul class="styled-list">
+                                    <li><strong>Alcance 1 (Scope 1):</strong> Emisiones directas (calderas, vehículos, fugas).</li>
+                                    <li><strong>Alcance 2 (Scope 2):</strong> Emisiones indirectas por energía adquirida (electricidad, vapor).</li>
+                                    <li><strong>Alcance 3 (Scope 3):</strong> Otras emisiones indirectas en la cadena de valor (bienes adquiridos, transporte, uso de productos vendidos, e-waste, viajes). Suelen ser las más significativas en TIC.</li>
+                                </ul>
+                                <p><strong>Importancia:</strong> Lucha contra cambio climático, gestión de riesgos regulatorios, reputación.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h4 class="accordion-header" id="headingConsumoEnergeticoAmbiental">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseConsumoEnergeticoAmbiental" aria-expanded="false" aria-controls="collapseConsumoEnergeticoAmbiental">
+                                <i class="bi bi-lightning-fill me-2"></i>Consumo Energético
+                            </button>
+                        </h4>
+                        <div id="collapseConsumoEnergeticoAmbiental" class="accordion-collapse collapse" aria-labelledby="headingConsumoEnergeticoAmbiental" data-bs-parent="#accordionIndicadoresAmbientales">
+                            <div class="accordion-body">
+                                <p><strong>Descripción:</strong> Mide cantidad total y composición del mix energético.</p>
+                                <p><strong>Indicadores Clave:</strong></p>
+                                <ul class="styled-list">
+                                    <li>Consumo total de energía (kWh, MWh, GJ) por fuente.</li>
+                                    <li>Porcentaje de energía de fuentes renovables.</li>
+                                    <li>Intensidad energética (energía/unidad de producción, empleado, m²).</li>
+                                    <li>PUE (Power Usage Effectiveness) para centros de datos (Total energía / Energía equipos TI).</li>
+                                </ul>
+                                <p><strong>Importancia:</strong> Relacionado con emisiones GEI, costos operativos, eficiencia de recursos.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h4 class="accordion-header" id="headingGestionResiduos">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseGestionResiduos" aria-expanded="false" aria-controls="collapseGestionResiduos">
+                                <i class="bi bi-recycle me-2"></i>Gestión de Residuos y Reciclaje
+                            </button>
+                        </h4>
+                        <div id="collapseGestionResiduos" class="accordion-collapse collapse" aria-labelledby="headingGestionResiduos" data-bs-parent="#accordionIndicadoresAmbientales">
+                            <div class="accordion-body">
+                                <p><strong>Descripción:</strong> Mide cantidad y tipo de residuos generados y cómo se gestionan.</p>
+                                <p><strong>Indicadores Clave:</strong></p>
+                                <ul class="styled-list">
+                                    <li>Cantidad total de residuos (toneladas) por tipo (peligrosos, no peligrosos).</li>
+                                    <li>Cantidad de residuos enviados a vertedero.</li>
+                                    <li>Tasa de reciclaje (%).</li>
+                                    <li>Tasa de reutilización (%).</li>
+                                    <li>Tasa de valorización energética.</li>
+                                    <li>E-waste: Cantidad generada, recogida y reciclada responsablemente.</li>
+                                </ul>
+                                <p><strong>Importancia:</strong> Promueve economía circular, reduce contaminación, conserva recursos, minimiza costos.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h4 class="accordion-header" id="headingConsumoAgua">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseConsumoAgua" aria-expanded="false" aria-controls="collapseConsumoAgua">
+                                <i class="bi bi-droplet-fill me-2"></i>Consumo de Agua
+                            </button>
+                        </h4>
+                        <div id="collapseConsumoAgua" class="accordion-collapse collapse" aria-labelledby="headingConsumoAgua" data-bs-parent="#accordionIndicadoresAmbientales">
+                            <div class="accordion-body">
+                                <p><strong>Descripción:</strong> Mide cantidad de agua extraída y consumida.</p>
+                                <p><strong>Indicadores Clave:</strong></p>
+                                <ul class="styled-list">
+                                    <li>Consumo total de agua (m³) por fuente.</li>
+                                    <li>Agua reciclada o reutilizada (m³).</li>
+                                    <li>Descargas de agua (m³), calidad y cumplimiento.</li>
+                                    <li>Intensidad de uso de agua.</li>
+                                </ul>
+                                <p><strong>Importancia:</strong> Crucial en regiones con estrés hídrico, relevante para fabricación de semiconductores y refrigeración de data centers.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h4 class="accordion-header" id="headingUsoMateriales">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseUsoMateriales" aria-expanded="false" aria-controls="collapseUsoMateriales">
+                                <i class="bi bi-box-seam me-2"></i>Uso de Materiales y Recursos
+                            </button>
+                        </h4>
+                        <div id="collapseUsoMateriales" class="accordion-collapse collapse" aria-labelledby="headingUsoMateriales" data-bs-parent="#accordionIndicadoresAmbientales">
+                            <div class="accordion-body">
+                                <p><strong>Descripción:</strong> Mide cantidad y tipo de materiales utilizados.</p>
+                                <p><strong>Indicadores Clave:</strong></p>
+                                <ul class="styled-list">
+                                    <li>Cantidad de materias primas consumidas.</li>
+                                    <li>Porcentaje de materiales reciclados o de contenido reciclado en productos.</li>
+                                    <li>Porcentaje de materiales renovables o de origen sostenible.</li>
+                                    <li>Uso de sustancias peligrosas o restringidas (RoHS, REACH).</li>
+                                    <li>Eficiencia en el uso de materiales (reducción de mermas).</li>
+                                </ul>
+                                <p><strong>Importancia:</strong> Fomenta desmaterialización, economía circular, reducción de dependencia de recursos vírgenes y tóxicos.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h4 class="accordion-header" id="headingBiodiversidad">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseBiodiversidad" aria-expanded="false" aria-controls="collapseBiodiversidad">
+                                <i class="bi bi-tree-fill me-2"></i>Biodiversidad y Uso del Suelo
+                            </button>
+                        </h4>
+                        <div id="collapseBiodiversidad" class="accordion-collapse collapse" aria-labelledby="headingBiodiversidad" data-bs-parent="#accordionIndicadoresAmbientales">
+                            <div class="accordion-body">
+                                <p><strong>Descripción:</strong> Mide impacto en ecosistemas y biodiversidad.</p>
+                                <p><strong>Indicadores Clave:</strong></p>
+                                <ul class="styled-list">
+                                    <li>Superficie de terreno ocupada o afectada.</li>
+                                    <li>Impacto en hábitats protegidos o áreas de alta biodiversidad.</li>
+                                    <li>Iniciativas de restauración o conservación de hábitats.</li>
+                                </ul>
+                                <p><strong>Importancia:</strong> Relevante para empresas con grandes infraestructuras o cadenas de suministro que impactan el uso del suelo.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div> <!-- Fin Accordion -->
+
+                <div class="alert alert-info mt-4" role="alert">
+                    La selección de indicadores ambientales debe alinearse con la <strong>materialidad</strong> de la empresa y con marcos de reporte reconocidos (como GRI, SASB, TCFD) para asegurar la comparabilidad y credibilidad.
+                </div>
+                <nav aria-label="Navegación del capítulo" class="mt-5">
+                    <h4 class="text-primary">Continuar Leyendo Capítulo 13:</h4>
+                    <ul class="list-group">
+                        <li class="list-group-item"><a href="capitulo13_introduccion_medicion_sostenibilidad_pisa4_B_Garcia.html" class="text-decoration-none">Introducción al Capítulo 13</a></li>
+                        <li class="list-group-item"><a href="capitulo13_punto1_importancia_metricas_pisa4_B_Garcia.html" class="text-decoration-none">13.1. Importancia de las métricas</a></li>
+                        <li class="list-group-item"><a href="capitulo13_punto3_indicadores_sociales_pisa4_B_Garcia.html" class="text-decoration-none">13.3. Indicadores sociales</a></li>
+                        <li class="list-group-item"><a href="capitulo13_punto4_indicadores_gobernanza_pisa4_B_Garcia.html" class="text-decoration-none">13.4. Indicadores de gobernanza</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </main>
+
+    <!-- Pie de página (idéntico a la plantilla) -->
+    <footer class="text-bg-dark text-center p-3 mt-auto">
+        <div class="container">
+            <p class="mb-1">&copy; 2024-2025 IES Gregorio Prieto - DAW1 - Grupo B - MCarmen García Navarro</p>
+            <div class="mb-2">
+                <p class="mb-0 d-inline">Creative Commons Atribución-NoComercial-CompartirIgual 4.0 Internacional</p>
+                <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/" class="link-light text-decoration-none ms-2">Licencia</a>
+            </div>
+            <p class="mt-2 mb-0"><small><strong>Importante sobre imágenes:</strong> Todas las imágenes utilizadas en este
+            trabajo que no sean de creación propia deben ser compatibles con la licencia elegida o con licencias
+            más permisivas. Si se utiliza una imagen con una licencia diferente pero compatible, se indicará
+            explícitamente junto a la imagen su licencia y autoría original.</small></p>
+        </div>
+    </footer>
+
+    <!-- Scripts JS (idénticos a la plantilla) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="./js_pisa4_B_garcia/js_garcia.js"></script>
+</body>
+</html>
