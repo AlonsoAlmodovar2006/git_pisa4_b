@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Cambia el título para cada página específica -->
+    <title>Página Genérica - Pisa 4 - B - García</title>
+
+    <!-- Google Fonts (si las usas y no están en el @import del CSS) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Nunito+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- Tus estilos personalizados (ahora muy reducidos) -->
+    <link rel="stylesheet" href="./css_pisa4_B_garcia/estilos_garcia.css">
+
+</head>
+<body class="d-flex flex-column min-vh-100"> <!-- Sticky footer classes -->
+    <!-- Cabecera -->
+    <header class="shadow-sm"> <!-- `shadow-sm` para una sombra sutil -->
+        <!-- `bg-primary` usará tu --bs-primary (Pale Cerulean). -->
+        <!-- `navbar-light` es para fondos claros con texto oscuro, adecuado para Pale Cerulean. -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-primary">
+            <div class="container">
+                <a class="navbar-brand fw-bold" href="../index.html"> <!-- `fw-bold` para texto en negrita -->
+                    <i class="bi bi-house-door-fill"></i>
+                    PISA 4 - Grupo B
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://github.com/OrwinZavaleta/git_pisa4_b">Repositorio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./index_pisa4_B_garcia.html">Índice</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./bibliografia_pisa4_B_garcia.html">Bibliografía García</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Contenido Principal -->
+    <main class="container mt-4 mb-5 flex-grow-1"> <!-- `flex-grow-1` para sticky footer -->
+        <div class="row">
+            <div class="col-12">
+                <!-- Título principal de la página usando clases de Bootstrap -->
+                <!-- `display-5` para tamaño, `border-bottom` para línea, -->
+                <!-- `border-danger` para color de acento (Melon, via --bs-danger), `border-2` para grosor -->
+                <!-- `pb-2 mb-4` para espaciado (padding-bottom y margin-bottom) -->
+                <h2 class="display-5 border-bottom border-danger border-2 pb-2 mb-4">
+                    Título de esta Página <!-- Este texto se cambiará en cada página -->
+                </h2>
+
+                <!--
+                **********************************************************************************
+                AQUÍ EMPIEZA EL CONTENIDO ESPECÍFICO DE CADA PÁGINA
+                Reemplaza este comentario y el siguiente párrafo de ejemplo
+                **********************************************************************************
+                -->
+                <p>Contenido de ejemplo de la plantilla. Este se reemplazará en cada página específica
+                   que se cree a partir de esta plantilla.
+                   Puedes usar clases de Bootstrap como <span class="text-primary">este texto en color primario</span>
+                   o <strong class="text-danger">este texto importante en color de acento</strong>.
+                </p>
+                <!--
+                **********************************************************************************
+                AQUÍ TERMINA EL CONTENIDO ESPECÍFICO
+                **********************************************************************************
+                -->
+
+            </div>
+        </div>
+    </main>
+
+    <!-- Pie de página -->
+    <!-- `text-bg-dark` usa --bs-dark (Slate Gray) para fondo y color de texto claro. -->
+    <!-- `mt-auto` para sticky footer. -->
+    <footer class="text-bg-dark text-center p-3 mt-auto">
+        <div class="container">
+            <p class="mb-1">© 2024-2025 IES Gregorio Prieto - DAW1 - Grupo B - MCarmen García Navarro</p>
+            <div class="mb-2"> <!-- Envuelve los dos elementos de la licencia para mejor manejo de margen -->
+                <p class="mb-0 d-inline">Creative Commons Atribución-NoComercial-CompartirIgual 4.0 Internacional</p>
+                <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/" class="link-light text-decoration-none ms-2">Licencia</a>
+                <!-- `link-light` para enlaces claros en fondo oscuro, `text-decoration-none` para quitar subrayado -->
+            </div>
+            <p class="mt-2 mb-0"><small><strong>Importante sobre imágenes:</strong> Todas las imágenes utilizadas en este
+            trabajo que no sean de creación propia deben ser compatibles con la licencia elegida o con licencias
+            más permisivas. Si se utiliza una imagen con una licencia diferente pero compatible, se indicará
+            explícitamente junto a la imagen su licencia y autoría original.</small></p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS Bundle (incluye Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <!-- Tu fichero JS personalizado -->
+    <script src="./js_pisa4_B_garcia/js_garcia.js"></script>
+</body>
+</html>

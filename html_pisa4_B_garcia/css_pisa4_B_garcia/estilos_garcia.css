@@ -1,0 +1,65 @@
+:root {
+    /* 1. Tu paleta de colores personalizada */
+    --custom-color-melon: #FFA69E;
+    --custom-color-cosmic-latte: #fcffe9;
+    --custom-color-aero-blue: #B8F2E6;
+    --custom-color-pale-cerulean: #AED9E0;
+    --custom-color-slate-gray: #5E6472;
+
+    /* 2. Sobrescribir variables de Bootstrap con tu paleta */
+    /* Colores base del tema */
+    --bs-primary: var(--custom-color-pale-cerulean); /* Color principal para acciones */
+    --bs-secondary: var(--custom-color-aero-blue);   /* Color secundario */
+    --bs-light: var(--custom-color-cosmic-latte);    /* Fondo claro, usado en text-bg-light */
+    --bs-dark: var(--custom-color-slate-gray);       /* Fondo oscuro, usado en text-bg-dark */
+
+    --bs-danger: var(--custom-color-melon); /* Para botones de acento, alertas, etc. */
+    --bs-danger-rgb: 255, 166, 158; /* Necesario para opacidad en clases como text-bg-danger */
+
+
+    /* Cuerpo y Texto */
+    --bs-body-bg: var(--custom-color-cosmic-latte);
+    --bs-body-color: var(--custom-color-slate-gray);
+    --bs-body-font-family: 'Nunito Sans', sans-serif;
+    --bs-emphasis-color: var(--custom-color-melon); /* Color para texto enfatizado, puede ser tu acento */
+
+    /* Encabezados */
+    --bs-heading-font-family: 'Montserrat', sans-serif;
+    --bs-heading-color: inherit; /* Hereda de --bs-body-color por defecto, o puedes especificar var(--custom-color-slate-gray) */
+    --bs-display-font-weight: 700; /* Para clases .display-* */
+
+    /* Enlaces */
+    --bs-link-color: var(--custom-color-melon);
+    --bs-link-hover-color: var(--custom-color-slate-gray);
+    --bs-link-font-weight: 700;
+
+    /* Bordes */
+    --bs-border-color: var(--custom-color-aero-blue); /* Color de borde por defecto */
+    --bs-border-width: 1px;
+
+
+    /* Para Navbar con fondo --bs-primary (Pale Cerulean - claro) y texto oscuro */
+    --bs-navbar-color: rgba(var(--bs-dark-rgb), 0.75); /* Texto gris oscuro semi-transparente */
+    --bs-navbar-hover-color: var(--bs-danger); /* Melon al pasar el ratón */
+    --bs-navbar-active-color: var(--bs-danger); /* Melon para activo */
+    --bs-navbar-brand-color: var(--bs-dark);   /* Marca con gris oscuro sólido */
+    --bs-navbar-toggler-border-color: rgba(var(--bs-dark-rgb), 0.25);
+    /* El icono del toggler es un SVG, su 'fill' se puede controlar con filter si es necesario,
+       o Bootstrap puede manejarlo bien con navbar-light/navbar-dark.
+       Con un fondo claro (Pale Cerulean), la clase `navbar-light` debería funcionar.
+    */
+}
+
+/* Estilos MÍNIMOS que Bootstrap no cubre fácilmente */
+
+/* Estilo para el marcador de lista personalizado */
+.styled-list {
+    list-style: none;
+    padding-left: 0; /* Bootstrap lo hace con .list-unstyled */
+}
+.styled-list li::before {
+    content: "✿"; /* O un icono de Bootstrap: content: "\F285"; font-family: "bootstrap-icons"; */
+    margin-right: 0.75rem;
+    color: var(--bs-danger); /* Usa el color de acento (Melon) */
+    font-size: 1.2em;
+}
