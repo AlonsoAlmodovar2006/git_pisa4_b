@@ -1,0 +1,237 @@
+/* Paleta de colores basada en el logo:
+   Azul Oscuro (Principal): #26335B
+   Azul Brillante (Acento): #0084FF
+   Fondo Claro (Página): #F8F9FA
+   Texto Oscuro (General): #212529 (Bootstrap default) o #343A40
+   Texto Claro (Sobre fondos oscuros): #FFFFFF
+   Gris Oscuro Navbar (Modo Oscuro): #343a40 (Bootstrap dark gray)
+*/
+
+:root {
+    --color-primario: #26335B; /* Azul Oscuro del logo - Usado para Navbar en modo claro */
+    --color-acento: #0084FF;   /* Azul Brillante del logo */
+    --color-fondo-pagina: #F8F9FA;
+    --color-texto-principal: #212529;
+    --color-texto-claro: #FFFFFF;
+    --color-borde-sutil: #dee2e6;
+    --color-navbar-dark-bg: #343a40; /* Gris oscuro para fondo de navbar en modo oscuro */
+}
+
+/* Atributos para tema oscuro */
+[data-bs-theme="dark"] {
+    --color-fondo-pagina: #212529;
+    --color-texto-principal: #e9ecef;
+    /* --color-primario se mantiene como #26335B para elementos de contenido,
+       pero el navbar usará --color-navbar-dark-bg */
+    --color-acento: #339eff;
+    --color-borde-sutil: #495057;
+}
+
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--color-fondo-pagina);
+    color: var(--color-texto-principal);
+    padding-top: 0;
+    padding-bottom: 70px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Estilo del Header */
+.bd-navbar {
+    /* En modo claro, usa el azul oscuro del logo */
+    background-color: var(--color-primario);
+    /* Modificamos la sombra para quitar la línea inset original, ya que añadiremos un borde más prominente */
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, .05);
+    /* Añadimos el borde inferior con el color de acento, igual que en el footer */
+    border-bottom: 3px solid var(--color-acento);
+}
+
+[data-bs-theme="dark"] .bd-navbar {
+    /* En modo oscuro, usa un gris oscuro para que el logo azul oscuro resalte */
+    background-color: var(--color-navbar-dark-bg);
+    /* La box-shadow y el border-bottom se heredan, y --color-acento se adapta al tema oscuro */
+}
+
+.bd-navbar .navbar-brand img {
+    border-radius: 50%;
+    /* No es necesario un fondo para la imagen si el navbar tiene buen contraste */
+}
+
+.bd-navbar .navbar-brand span {
+    color: var(--color-texto-claro);
+    font-weight: 600;
+}
+
+.bd-navbar .nav-link {
+    color: rgba(255, 255, 255, 0.85);
+    font-weight: 500;
+}
+
+.bd-navbar .nav-link:hover,
+.bd-navbar .nav-link:focus {
+    color: var(--color-texto-claro);
+}
+
+/* Color del borde inferior del enlace activo en el navbar */
+.bd-navbar .nav-link.active {
+    color: var(--color-texto-claro);
+    font-weight: 700;
+    /* El color del borde usará el --color-acento del tema actual (claro u oscuro) */
+    border-bottom: 2px solid var(--color-acento);
+}
+
+
+.bd-navbar .navbar-toggler {
+    color: rgba(255, 255, 255, 0.75);
+    border-color: rgba(255, 255, 255, 0.1);
+}
+.bd-navbar .navbar-toggler .bi-three-dots {
+    font-size: 1.5rem;
+}
+
+/* Iconos generales en la barra de navegación (GitHub, Twitter, Toggle Theme) */
+.bd-navbar .bi {
+    color: rgba(255, 255, 255, 0.85); /* Blancos sobre el fondo oscuro del navbar */
+}
+.bd-navbar .bi:hover {
+    color: var(--color-texto-claro);
+}
+.bd-navbar .dropdown-toggle::after {
+    display: none;
+}
+
+/* Estilo de los iconos DENTRO del dropdown del selector de tema */
+.dropdown-menu .dropdown-item .bi {
+    color: var(--color-texto-principal); /* Hereda el color del texto del item (oscuro en tema claro, claro en tema oscuro) */
+}
+/* Específicamente para tema claro, si la herencia no es suficiente o se quiere otro color */
+[data-bs-theme="light"] .dropdown-menu .dropdown-item .bi {
+    color: var(--color-primario); /* Iconos azules oscuros en el dropdown de tema claro */
+}
+[data-bs-theme="dark"] .dropdown-menu .dropdown-item .bi {
+    color: var(--color-texto-principal); /* Iconos blancos/claros en el dropdown de tema oscuro */
+}
+
+
+/* Contenido Principal */
+main {
+    padding-top: 3rem;
+}
+
+main .main-title {
+    color: var(--color-primario); /* Azul oscuro del logo en tema claro */
+    border-bottom: 2px solid var(--color-acento);
+    padding-bottom: 0.5rem;
+    font-weight: 700;
+}
+
+[data-bs-theme="dark"] main .main-title {
+    color: var(--color-acento); /* Azul brillante en tema oscuro para contraste */
+    border-bottom-color: var(--color-acento);
+}
+
+/* Footer */
+.footer-custom {
+    background-color: var(--color-primario); /* Fondo del footer en modo claro */
+    color: rgba(255, 255, 255, 0.9);
+    border-top: 3px solid var(--color-acento); /* Esta es la línea que queremos replicar */
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 1020;
+}
+[data-bs-theme="dark"] .footer-custom {
+    background-color: var(--color-navbar-dark-bg); /* Mismo gris que navbar en modo oscuro */
+    /* El border-top-color se adapta con --color-acento para el tema oscuro */
+}
+
+
+.footer-custom p {
+    margin-bottom: 0;
+}
+
+/* Estilos para enlaces generales */
+a {
+    color: var(--color-primario);
+    text-decoration: none;
+}
+a:hover {
+    color: var(--color-acento);
+}
+
+[data-bs-theme="dark"] a {
+    color: var(--color-acento);
+}
+[data-bs-theme="dark"] a:hover {
+    color: var(--color-texto-claro);
+}
+
+
+.list-group-item {
+    background-color: var(--color-texto-claro); /* Blanco en tema claro */
+    border-color: var(--color-borde-sutil);
+}
+.list-group-item a {
+    font-weight: bold;
+}
+
+[data-bs-theme="dark"] .list-group-item {
+    background-color: #2c3034; /* Un poco más claro que el fondo de página oscuro */
+    border-color: var(--color-borde-sutil);
+}
+
+
+/* Mejoras para la tabla de bibliografía (si se usa) */
+.table {
+    background-color: var(--color-texto-claro);
+}
+[data-bs-theme="dark"] .table {
+    background-color: #2b3035;
+    color: var(--color-texto-principal);
+}
+
+.table thead th {
+    background-color: var(--color-primario);
+    color: var(--color-texto-claro);
+}
+[data-bs-theme="dark"] .table thead th {
+    /* El primario sigue siendo el azul del logo, si quieres que la cabecera de tabla
+       sea gris oscuro como el navbar en modo oscuro, usa var(--color-navbar-dark-bg) */
+    background-color: var(--color-navbar-dark-bg);
+}
+
+
+/* Estilo para la licencia */
+.license-section img {
+    margin-top: 10px;
+    border: 1px solid var(--color-borde-sutil);
+    background-color: white; /* Para que el fondo de la imagen de CC sea siempre blanco */
+}
+[data-bs-theme="dark"] .license-section img {
+    /* Si la imagen de licencia tiene partes transparentes que se ven mal en oscuro */
+    /* filter: invert(1) hue-rotate(180deg); /* Podría ser demasiado, ajustar según necesidad */
+}
+
+.license-section p a {
+    font-weight: bold;
+}
+
+/* Para asegurar que el padding-bottom del body permita ver todo el contenido sobre el footer fijo */
+body {
+    margin-bottom: 70px;
+}
+
+/* En tu archivo estilos_zavaleta.css podrías añadir algo así: */
+.stretched-link-button-fix {
+    position: static; /* O ajusta según sea necesario para que no rompa el layout del botón */
+    /* Puedes añadir más estilos para asegurar que se vea bien y sea funcional */
+}
+.accordion-button:not(.collapsed) a.stretched-link-button-fix,
+.accordion-button a.stretched-link-button-fix {
+    color: inherit !important; /* Hereda el color del botón */
+    text-decoration: none !important; /* Sin subrayado */
+}
+.accordion-button:focus {
+    box-shadow: none; /* Opcional: quitar el box-shadow del botón al enfocar si interfiere con el enlace */
+}
