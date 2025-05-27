@@ -1,0 +1,114 @@
+/* Paleta de colores seleccionada: https://coolors.co/palette/0077b6-90e0ef-ffffff */
+/* Colores principales:
+   - Fondo principal: #FFFFFF (Blanco)
+   - Enlaces, textos y detalles: #0077B6 (Azul profundo, complementario al negro)
+   - Encabezados y fondos secundarios: #90E0EF (Azul claro suave, complementario al negro)
+   - Negro (#000000) se mantiene para header y footer
+*/
+
+body {
+    background-color: #ffffff;
+    color: #0077b6;
+    font-family: "Arial", sans-serif;
+}
+
+header {
+    background-color: #000000;
+    border-bottom: 3px solid #90e0ef;
+}
+
+header h1 {
+    color: #90e0ef;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.navbar {
+    background-color: #ffffff !important;
+    border-bottom: 1px solid #90e0ef;
+}
+
+.navbar .nav-link {
+    color: #0077b6 !important;
+    font-weight: 500;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link.active {
+    color: #ffffff !important;
+    background-color: #0077b6;
+    border-radius: 5px;
+}
+
+main {
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 8px;
+}
+
+main h2 {
+    color: #0077b6;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    border-bottom: 2px solid #90e0ef;
+    padding-bottom: 0.5rem;
+}
+
+main h3 {
+    color: #0077b6;
+    font-size: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+main p,
+main li {
+    color: #0077b6;
+    line-height: 1.6;
+}
+
+.list-group-item {
+    background-color: #90e0ef;
+    color: #0077b6;
+    border: 1px solid #0077b6;
+    margin-bottom: 0.5rem;
+    border-radius: 5px;
+}
+
+.list-group-item a {
+    color: #0077b6;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.list-group-item a:hover {
+    color: #ffffff;
+    background-color: #0077b6;
+    border-radius: 5px;
+    padding: 2px 5px;
+    text-decoration: none;
+}
+
+footer {
+    background-color: #000000;
+    border-top: 3px solid #90e0ef;
+}
+
+footer p {
+    color: #90e0ef;
+    margin: 0;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    main h2 {
+        font-size: 1.75rem;
+    }
+
+    main {
+        padding: 1.5rem;
+    }
+}

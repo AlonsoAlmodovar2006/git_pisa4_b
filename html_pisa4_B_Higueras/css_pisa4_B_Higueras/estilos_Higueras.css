@@ -1,0 +1,96 @@
+/* estilos_apellido1.css */
+
+/* General */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa; /* Color de fondo suave */
+}
+
+/* Cabecera */
+header {
+    background-color: #007bff; /* Azul de Bootstrap */
+    color: #ffffff; /* Texto blanco */
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra para profundidad */
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+/* Menú de navegación */
+.navbar {
+    margin-bottom: 20px;
+}
+
+.navbar-nav .nav-link {
+    color: #ffffff !important; /* Aseguramos el texto blanco en los enlaces */
+    font-weight: bold;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #ffc107 !important; /* Color amarillo en hover */
+    text-decoration: underline; /* Subrayado para énfasis */
+}
+
+/* Contenido principal */
+main {
+    background-color: #ffffff; /* Fondo blanco */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra para profundidad */
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+main h2 {
+    font-size: 1.75rem;
+    color: #343a40; /* Gris oscuro */
+    text-align: center;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #007bff; /* Línea azul debajo */
+    padding-bottom: 5px;
+}
+
+/* Pie de página */
+footer {
+    background-color: #343a40; /* Gris oscuro */
+    color: #ffffff;
+    padding: 10px;
+    text-align: center;
+    font-size: 0.875rem;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); /* Sombra superior */
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Enlaces del pie de página */
+footer a {
+    color: #ffc107;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Adaptabilidad para dispositivos pequeños */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    main h2 {
+        font-size: 1.5rem;
+    }
+
+    footer p {
+        font-size: 0.75rem;
+    }
+}

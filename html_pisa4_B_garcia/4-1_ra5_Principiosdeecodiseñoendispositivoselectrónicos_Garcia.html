@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4.1 Principios de Ecodiseño en Dispositivos Electrónicos - Pisa 4 - B - García</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Nunito+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- Tus estilos personalizados -->
+    <link rel="stylesheet" href="./css_pisa4_B_garcia/estilos_garcia.css">
+
+</head>
+<body class="d-flex flex-column min-vh-100">
+    <!-- Cabecera -->
+    <header class="shadow-sm">
+        <nav class="navbar navbar-expand-lg navbar-light bg-primary">
+            <div class="container">
+                <a class="navbar-brand fw-bold" href="../index.html">
+                    <i class="bi bi-house-door-fill"></i>
+                    PISA 4 - Grupo B
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://github.com/OrwinZavaleta/git_pisa4_b">Repositorio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index_pisa4_B_garcia.html">Índice</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="bibliografia_pisa4_B_garcia.html">Bibliografía García</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Contenido Principal -->
+    <main class="container mt-4 mb-5 flex-grow-1">
+        <div class="row">
+            <div class="col-12">
+                <h2 class="display-5 border-bottom border-danger border-2 pb-2 mb-4">
+                    4.1. Principios de Ecodiseño en Dispositivos Electrónicos
+                </h2>
+
+                <p class="lead">
+                    El ecodiseño en dispositivos electrónicos es un enfoque sistemático que busca minimizar el impacto ambiental de estos productos a lo largo de todo su ciclo de vida. Implica tomar decisiones conscientes en la fase de diseño que afectarán la sostenibilidad del producto en todas sus etapas posteriores.
+                </p>
+                <p class="mb-4">A continuación, se detallan los principios clave:</p>
+
+                <div class="accordion" id="accordionPrincipiosEcodiseno">
+
+                    <div class="accordion-item">
+                        <h3 class="accordion-header" id="headingMateriales">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseMateriales" aria-expanded="false" aria-controls="collapseMateriales">
+                                <i class="bi bi-recycle me-2"></i>Selección de Materiales de Bajo Impacto y Origen Responsable
+                            </button>
+                        </h3>
+                        <div id="collapseMateriales" class="accordion-collapse collapse" aria-labelledby="headingMateriales" data-bs-parent="#accordionPrincipiosEcodiseno">
+                            <div class="accordion-body">
+                                <ul class="list-unstyled styled-list">
+                                    <li><strong>Priorizar materiales reciclados:</strong> Incrementar el uso de plásticos reciclados (PCR, PIR), metales reciclados (aluminio, estaño, cobalto, oro, tierras raras).</li>
+                                    <li><strong>Evitar o reducir sustancias peligrosas:</strong> Cumplir y superar regulaciones como RoHS y REACH (eliminar plomo, mercurio, cadmio, BFRs, ftalatos).</li>
+                                    <li><strong>Uso de materiales renovables y biodegradables:</strong> Explorar bioplásticos o materiales de origen biológico, asegurando gestionabilidad de fin de vida.</li>
+                                    <li><strong>Trazabilidad y minerales libres de conflicto:</strong> Asegurar que minerales 3TG no provengan de zonas de conflicto mediante debida diligencia (guías OCDE).</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h3 class="accordion-header" id="headingDesmaterializacion">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseDesmaterializacion" aria-expanded="false" aria-controls="collapseDesmaterializacion">
+                                <i class="bi bi-arrows-angle-contract me-2"></i>Reducción de la Cantidad de Materiales (Desmaterialización)
+                            </button>
+                        </h3>
+                        <div id="collapseDesmaterializacion" class="accordion-collapse collapse" aria-labelledby="headingDesmaterializacion" data-bs-parent="#accordionPrincipiosEcodiseno">
+                            <div class="accordion-body">
+                                <ul class="list-unstyled styled-list">
+                                    <li><strong>Miniaturización y diseño compacto:</strong> Reducir tamaño y peso sin comprometer durabilidad o reparabilidad.</li>
+                                    <li><strong>Optimización del diseño estructural:</strong> Usar simulación para carcasas y estructuras más ligeras pero robustas.</li>
+                                    <li><strong>Integración de funciones:</strong> Un dispositivo multifunción reduce la necesidad de varios dispositivos.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h3 class="accordion-header" id="headingEficienciaEnergetica">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEficienciaEnergetica" aria-expanded="false" aria-controls="collapseEficienciaEnergetica">
+                                <i class="bi bi-lightning-charge me-2"></i>Eficiencia Energética Durante el Uso y la Fabricación
+                            </button>
+                        </h3>
+                        <div id="collapseEficienciaEnergetica" class="accordion-collapse collapse" aria-labelledby="headingEficienciaEnergetica" data-bs-parent="#accordionPrincipiosEcodiseno">
+                            <div class="accordion-body">
+                                <ul class="list-unstyled styled-list">
+                                    <li><strong>Componentes de bajo consumo:</strong> Seleccionar procesadores, pantallas, memorias con mejor rendimiento por vatio.</li>
+                                    <li><strong>Gestión inteligente de la energía:</strong> Modos de ahorro avanzados, suspensión profunda, apagado automático.</li>
+                                    <li><strong>Fuentes de alimentación eficientes:</strong> Certificación alta (ej. 80 PLUS Titanium).</li>
+                                    <li><strong>Reducir el consumo en standby.</strong></li>
+                                    <li><strong>Optimizar procesos de fabricación:</strong> Usar energías renovables, reducir consumo de agua y residuos en fábricas.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h3 class="accordion-header" id="headingDurabilidad">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseDurabilidad" aria-expanded="false" aria-controls="collapseDurabilidad">
+                                <i class="bi bi-shield-check me-2"></i>Diseño para la Durabilidad y la Larga Vida Útil
+                            </button>
+                        </h3>
+                        <div id="collapseDurabilidad" class="accordion-collapse collapse" aria-labelledby="headingDurabilidad" data-bs-parent="#accordionPrincipiosEcodiseno">
+                            <div class="accordion-body">
+                                <ul class="list-unstyled styled-list">
+                                    <li><strong>Robustez y resistencia:</strong> Soportar uso diario, caídas razonables y desgaste.</li>
+                                    <li><strong>Componentes de alta calidad y fiabilidad:</strong> Para reducir fallos prematuros.</li>
+                                    <li><strong>Protección contra obsolescencia programada.</strong></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h3 class="accordion-header" id="headingMantenimiento">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseMantenimiento" aria-expanded="false" aria-controls="collapseMantenimiento">
+                                <i class="bi bi-tools me-2"></i>Diseño para la Facilidad de Mantenimiento y Reparación
+                            </button>
+                        </h3>
+                        <div id="collapseMantenimiento" class="accordion-collapse collapse" aria-labelledby="headingMantenimiento" data-bs-parent="#accordionPrincipiosEcodiseno">
+                            <div class="accordion-body">
+                                <ul class="list-unstyled styled-list">
+                                    <li><strong>Modularidad:</strong> Componentes fácilmente reemplazables (batería, pantalla, puertos).</li>
+                                    <li><strong>Accesibilidad a los componentes:</strong> Tornillos estándar en lugar de pegamentos excesivos.</li>
+                                    <li><strong>Disponibilidad de piezas de repuesto:</strong> A precios razonables y por tiempo extendido.</li>
+                                    <li><strong>Información para la reparación:</strong> Manuales, diagramas, diagnósticos (derecho a reparar).</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h3 class="accordion-header" id="headingActualizabilidad">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseActualizabilidad" aria-expanded="false" aria-controls="collapseActualizabilidad">
+                                <i class="bi bi-arrow-up-circle me-2"></i>Diseño para la Actualizabilidad (Hardware y Software)
+                            </button>
+                        </h3>
+                        <div id="collapseActualizabilidad" class="accordion-collapse collapse" aria-labelledby="headingActualizabilidad" data-bs-parent="#accordionPrincipiosEcodiseno">
+                            <div class="accordion-body">
+                                <ul class="list-unstyled styled-list">
+                                    <li><strong>Permitir actualizaciones de componentes clave:</strong> RAM, SSD en ordenadores.</li>
+                                    <li><strong>Soporte de software a largo plazo:</strong> Actualizaciones de seguridad y SO extendidas.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h3 class="accordion-header" id="headingDesmontaje">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseDesmontaje" aria-expanded="false" aria-controls="collapseDesmontaje">
+                                <i class="bi bi-box-arrow-in-down-left me-2"></i>Diseño para el Desmontaje, Reutilización y Reciclaje (DfD/DfR)
+                            </button>
+                        </h3>
+                        <div id="collapseDesmontaje" class="accordion-collapse collapse" aria-labelledby="headingDesmontaje" data-bs-parent="#accordionPrincipiosEcodiseno">
+                            <div class="accordion-body">
+                                <ul class="list-unstyled styled-list">
+                                    <li><strong>Fácil desmontaje al final de la vida útil.</strong></li>
+                                    <li><strong>Etiquetado claro de materiales plásticos.</strong></li>
+                                    <li><strong>Evitar materiales incompatibles o contaminantes.</strong></li>
+                                    <li><strong>Minimizar el número de tipos de materiales diferentes.</strong></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h3 class="accordion-header" id="headingEmbalaje">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEmbalaje" aria-expanded="false" aria-controls="collapseEmbalaje">
+                                <i class="bi bi-box-seam me-2"></i>Optimización del Embalaje
+                            </button>
+                        </h3>
+                        <div id="collapseEmbalaje" class="accordion-collapse collapse" aria-labelledby="headingEmbalaje" data-bs-parent="#accordionPrincipiosEcodiseno">
+                            <div class="accordion-body">
+                                <ul class="list-unstyled styled-list">
+                                    <li><strong>Reducir tamaño y peso del embalaje.</strong></li>
+                                    <li><strong>Utilizar materiales reciclados, reciclables y/o biodegradables.</strong></li>
+                                    <li><strong>Eliminar plásticos de un solo uso.</strong></li>
+                                    <li><strong>Diseñar para la eficiencia en el transporte.</strong></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h3 class="accordion-header" id="headingTransporte">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTransporte" aria-expanded="false" aria-controls="collapseTransporte">
+                                <i class="bi bi-truck me-2"></i>Consideración del Transporte y la Logística
+                            </button>
+                        </h3>
+                        <div id="collapseTransporte" class="accordion-collapse collapse" aria-labelledby="headingTransporte" data-bs-parent="#accordionPrincipiosEcodiseno">
+                            <div class="accordion-body">
+                                <ul class="list-unstyled styled-list">
+                                    <li><strong>Producción local o regional cuando sea posible.</strong></li>
+                                    <li><strong>Optimizar rutas y modos de transporte.</strong></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div> <!-- Fin Accordion -->
+                 <figure class="text-center my-4">
+                    <img src="./imgs_pisa4_B_garcia/capitulo4.1.jpg" class="img-fluid rounded shadow-sm"
+                        alt="Descripción visual de la imagen relacionada con la sostenibilidad y tecnología">
+                    <figcaption class="figure-caption mt-2">Imagen generado con GeminiPro 2.5</figcaption>
+                </figure>
+                <div class="alert alert-secondary mt-4" role="alert">
+                    <p class="mb-1">La implementación de estos principios a menudo implica un equilibrio, ya que algunas mejoras (ej. mayor robustez) podrían requerir más material. El ecodiseño busca la mejor solución global considerando todos los impactos.</p>
+                    <p class="mb-0">Certificaciones como <strong>EPEAT</strong>, <strong>TCO Certified</strong>, y <strong>Blue Angel</strong> ayudan a identificar productos que cumplen con criterios de ecodiseño más estrictos.</p>
+                </div>
+                <nav aria-label="Navegación del capítulo" class="mt-5">
+                     <h4 class="text-primary">Continuar Leyendo Capítulo 4:</h4>
+                     <ul class="list-group">
+                         <li class="list-group-item"><a href="4-1_ra5_Principiosdeecodiseñoendispositivoselectrónicos_Garcia.html" class="text-decoration-none">Introducción al Capítulo 4</a></li>
+                         <li class="list-group-item"><a href="4-2_ra5_Softwareeficienteenergéticamente(greencoding,low-resourceapps)_Garcia.html" class="text-decoration-none">4.2. Software eficiente energéticamente</a></li>
+                         <li class="list-group-item"><a href="4-3_ra5_Casosrealesdeecodiseñoennuestrosectorproductivo_Garcia.html" class="text-decoration-none">4.3. Casos reales de ecodiseño</a></li>
+                     </ul>
+                 </nav>
+            </div>
+        </div>
+    </main>
+
+    <!-- Pie de página -->
+    <footer class="text-bg-dark text-center p-3 mt-auto">
+        <div class="container">
+            <p class="mb-1">&copy; 2024-2025 IES Gregorio Prieto - DAW1 - Grupo B - MCarmen García Navarro</p>
+            <div class="mb-2">
+                <p class="mb-0 d-inline">Creative Commons Atribución-NoComercial-CompartirIgual 4.0 Internacional</p>
+                <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/" class="link-light text-decoration-none ms-2">Licencia</a>
+            </div>
+            <p class="mt-2 mb-0"><small><strong>Importante sobre imágenes:</strong> Todas las imágenes utilizadas en este
+            trabajo que no sean de creación propia deben ser compatibles con la licencia elegida o con licencias
+            más permisivas. Si se utiliza una imagen con una licencia diferente pero compatible, se indicará
+            explícitamente junto a la imagen su licencia y autoría original.</small></p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS Bundle (incluye Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <!-- Tu fichero JS personalizado -->
+    <script src="./js_pisa4_B_garcia/js_garcia.js"></script>
+</body>
+</html>
